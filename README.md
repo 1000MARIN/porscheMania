@@ -1,11 +1,11 @@
-# :pushpin: goQuality
->고퀄리티 개발 컨텐츠 공유 서비스  
+# :pushpin: PorscheMania
+>포스쉐매니아 커뮤니티 게시판 
 >https://go-quality.dev  
 
 </br>
 
 ## 1. 제작 기간 & 참여 인원
-- 2019년 2월 18일 ~ 4월 5일
+- 2021년 8월 10일 ~ 9월 17일
 - 개인 프로젝트
 
 </br>
@@ -22,8 +22,7 @@
   - Spring Security
   - Jsoup
 #### `Front-end`
-  - Vue.js 3.0
-  - Element UI
+  - Bootstrap
 
 </br>
 
