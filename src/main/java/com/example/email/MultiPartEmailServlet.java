@@ -36,7 +36,7 @@ public class MultiPartEmailServlet extends HttpServlet {
 		
 		// MultipartRequest 인자값
 		// 1. request
-		// 2. 업로드할 물리적 경로.  "C:/ksw/upload"
+		// 2. 업로드할 물리적 경로.  "C:/LCJ/upload"
 		// 3. 업로드 최대크기 바이트 단위로 제한. 1024Byte * 1024Byte = 1MB 
 		// 4. request의 텍스트 데이터, 파일명 인코딩 "utf-8"
 		// 5. 파일명 변경 정책. 파일명 중복시 이름변경규칙 가진 객체를 전달
