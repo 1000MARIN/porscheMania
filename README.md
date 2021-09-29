@@ -37,6 +37,8 @@ JSP를 활용하여 사용되는 서버 프로그램 중에서
 ### 5.1. DB 연결
 
 - :pushpin: [코드 확인](https://github.com/1000MARIN/porscheMania/blob/master/src/main/java/com/example/repository/JdbcUtils.java#L12)
+  - Eclipse project에 JDBC 라이브러리 추가하였습니다.
+  - MySQL JDBC Driver 등록 하였습니다.
 
 ### 5.2. Service
 
