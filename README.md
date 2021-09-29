@@ -14,7 +14,7 @@
   - JSP
 #### `Front-end`
   - Bootstrap
-
+  - jQuery
 
 ## 3. 유스케이스 다이어그램
 ![유스](https://user-images.githubusercontent.com/84886987/135211122-49c3e615-1f68-49a8-8707-5425bdd5c994.png)
