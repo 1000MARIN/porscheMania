@@ -61,7 +61,8 @@ JSP를 활용하여 사용되는 서버 프로그램 중에서
 - **Json를 이용하여 이메일 수신 비율 차트** :pushpin: [코드 확인](https://github.com/1000MARIN/porscheMania/blob/master/src/main/webapp/chart/pieChartEmail.jsp#L25)
   - URL 유효성 체크와 이미지, 제목 파싱이 끝난 컨텐츠는 DB에 저장합니다.
   - 저장된 컨텐츠는 다시 Repository - Service - Controller를 거쳐 화면단에 송출됩니다.
-  <details>
+
+<details>
 <summary><b>서버 코드</b></summary>
 <div markdown="1">
 
