@@ -7,7 +7,6 @@
 - 2021년 8월 10일 ~ 9월 17일
 - 개인 프로젝트
 
-</br>
 
 ## 2. 사용 기술
 #### `Back-end`
@@ -16,21 +15,17 @@
 #### `Front-end`
   - Bootstrap
 
-</br>
 
 ## 3. 유스케이스 다이어그램
-![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/final_erd.png)
+![유스](https://user-images.githubusercontent.com/84886987/135211122-49c3e615-1f68-49a8-8707-5425bdd5c994.png)
 
 ## 4. ERD 설계
-![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/final_erd.png)
-
-
-
+![ERD](https://user-images.githubusercontent.com/84886987/135211132-3e41da6e-2bd2-4798-b783-b585cbdd51aa.png)
 
 ## 5. 핵심 기능
-이 서비스의 핵심 기능은 컨텐츠 등록 기능입니다.  
-사용자는 단지 컨텐츠의 카테고리를 선택하고, URL만 입력하면 끝입니다.  
-이 단순한 기능의 흐름을 보면, 서비스가 어떻게 동작하는지 알 수 있습니다.  
+JSP를 활용하여 사용되는 서버 프로그램 중에서 
+데이터를 INSERT, SELECT, UPDATE, DELETE할 수 있는 
+게시판 웹 서버 프로그램을 주제로 하여 만들어 보았습니다. 
 
 <details>
 <summary><b>핵심 기능 설명 펼치기</b></summary>
