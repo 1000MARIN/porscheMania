@@ -44,18 +44,17 @@ JSP를 활용하여 사용되는 서버 프로그램 중에서
 
 
 - **가입시 아이디 중복 확인** :pushpin: [코드 확인](https://github.com/1000MARIN/porscheMania/blob/master/src/main/webapp/member/joinIdDupChk.jsp#L33) :pushpin: [코드 확인](https://github.com/1000MARIN/porscheMania/blob/master/src/main/java/com/example/repository/MemberDAO.java#L163)
-  - 사용자가 URL 입력 시 Http 프로토콜을 생략하거나 공백을 넣은 경우,  
-  올바른 URL이 될 수 있도록 Http 프로토콜을 추가해주고, 공백을 제거해줍니다.
+  - 아이디 조건으로 카운트합니다.
+  - 아이디가 있으면 count가 1 없으면 0으로 조회합니다.
 
-- **다중 파일 첨부** :pushpin: [코드 확인](https://github.com/1000MARIN/porscheMania/blob/master/src/main/webapp/board/boardWrite.jsp#L123)
-  - 화면단에서 모양새만 확인한 URL이 실제 리소스로 연결되는지 HttpUrlConnection으로 테스트합니다.
-  - 이 때, 빠른 응답을 위해 Request Method를 GET이 아닌 HEAD를 사용했습니다.
-  - (HEAD 메소드는 GET 메소드의 응답 결과의 Body는 가져오지 않고, Header만 확인하기 때문에 GET 메소드에 비해 응답속도가 빠릅니다.)
+- **다중 파일 첨부** :pushpin: [코드 확인](https://github.com/1000MARIN/porscheMania/blob/master/src/main/webapp/board/boardWritePro.jsp#L71)
+  - MultipartRequest 를 사용하기 위해서는 com.oreilly.servlet 패키지를 import 해야 합니다.   
+  - MultipartRequest 는 객체를 생성하자 마자 파일을 업로드 합니다.
   
-- **채팅** :pushpin: [코드 확인](https://github.com/1000MARIN/porscheMania/blob/master/src/main/webapp/websocket/simpleChat.jsp#L90)
-  - 화면단에서 모양새만 확인한 URL이 실제 리소스로 연결되는지 HttpUrlConnection으로 테스트합니다.
-  - 이 때, 빠른 응답을 위해 Request Method를 GET이 아닌 HEAD를 사용했습니다.
-  - (HEAD 메소드는 GET 메소드의 응답 결과의 Body는 가져오지 않고, Header만 확인하기 때문에 GET 메소드에 비해 응답속도가 빠릅니다.)
+- **채팅** :pushpin: [코드 확인](https://github.com/1000MARIN/porscheMania/blob/master/src/main/webapp/websocket/simpleChat.jsp#L98)
+  - 서버측 자바 소스에서 @ServerEndpoint 부분이 클라이언트에서 접속할 서버 주소입니다.
+  - @OnMessage는 클라이언트로부터 메시지가 도착했을 경우 처리 방법입니다.
+  - @OnOpen과 @onClose는 클라이언트가 접속을 할 때와 접속이 끊어졌을떄의 처리입니다.
 
 ### 5.3. 관리자 모드
 
