@@ -58,7 +58,7 @@ JSP를 활용하여 사용되는 서버 프로그램 중에서
   - URL 유효성 체크와 이미지, 제목 파싱이 끝난 컨텐츠는 DB에 저장합니다.
   - 저장된 컨텐츠는 다시 Repository - Service - Controller를 거쳐 화면단에 송출됩니다.
   
-- **단체 메일 ** :pushpin: [코드 확인]()
+- **단체 메일 발송하기** :pushpin: [코드 확인]()
   - URL 유효성 체크와 이미지, 제목 파싱이 끝난 컨텐츠는 DB에 저장합니다.
   - 저장된 컨텐츠는 다시 Repository - Service - Controller를 거쳐 화면단에 송출됩니다.
 
