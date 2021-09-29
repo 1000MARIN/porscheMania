@@ -22,8 +22,12 @@
 ## 3. 유스케이스 다이어그램
 ![유스](https://user-images.githubusercontent.com/84886987/135211122-49c3e615-1f68-49a8-8707-5425bdd5c994.png)
 
+</br>
+
 ## 4. ERD 설계
 ![ERD](https://user-images.githubusercontent.com/84886987/135211132-3e41da6e-2bd2-4798-b783-b585cbdd51aa.png)
+
+</br>
 
 ## 5. 핵심 기능
 JSP를 활용하여 사용되는 서버 프로그램 중에서 
