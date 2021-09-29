@@ -61,7 +61,7 @@ public class MultiPartEmailServlet extends HttpServlet {
 
 
 		// MultiPartEmail 클래스 : 텍스트 메시지와 파일을 함께 전송 용도
-		//   EmailAttachment 클래스 : 첨부파일 정보 표현
+		// EmailAttachment 클래스 : 첨부파일 정보 표현
 		
 		long beginTime = System.currentTimeMillis(); // 시작시간
 		
@@ -92,18 +92,17 @@ public class MultiPartEmailServlet extends HttpServlet {
 			email.setFrom("springjava0506@gmail.com", "관리자", "utf-8");
 			
 			// 받는사람 설정
-//			email.addTo("zencoding@daum.net", "김상우", "utf-8");
-//			email.addTo("zencoding@daum.net", "김상우", "utf-8");
-//			email.addTo("zencoding@daum.net", "김상우", "utf-8");
+//			email.addTo("example@example.com", "이철진", "utf-8");
+
 			for (String emailAddr : receivers) {
 				email.addTo(emailAddr.trim());
 			} // for
 			
 			// 받는사람(참조인) 설정
-			//email.addCc("zencoding@hanmail.net", "김상우", "utf-8");
+			//email.addCc("example@example.com", "이철진", "utf-8");
 			
 			// 받는사람(숨은참조인) 설정
-			//email.addBcc("zencoding@hanmail.net", "김상우", "utf-8");
+			//email.addBcc("example@example.com", "이철진", "utf-8");
 			
 			
 			// 제목 설정
