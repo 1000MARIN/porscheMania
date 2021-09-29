@@ -45,7 +45,6 @@ public class ChartRestServlet extends HttpServlet {
 
 		List<Map<String, Object>> list = memberDAO.getGenderPerCount();
 
-		// chart.js에서 사용될수 있도록 데이터를 가공하기
 
 		List<String> labelList = new ArrayList<>(); // 레이블을 담을 리스트 준비
 		List<Integer> dataList = new ArrayList<>(); // 데이터를 담을 리스트 준비
