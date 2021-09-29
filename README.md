@@ -61,6 +61,70 @@ JSP를 활용하여 사용되는 서버 프로그램 중에서
 - **Json를 이용하여 이메일 수신 비율 차트** :pushpin: [코드 확인](https://github.com/1000MARIN/porscheMania/blob/master/src/main/webapp/chart/pieChartEmail.jsp#L25)
   - URL 유효성 체크와 이미지, 제목 파싱이 끝난 컨텐츠는 DB에 저장합니다.
   - 저장된 컨텐츠는 다시 Repository - Service - Controller를 거쳐 화면단에 송출됩니다.
+  <details>
+<summary><b>서버 코드</b></summary>
+<div markdown="1">
+
+  ```java
+  @WebServlet(urlPatterns = "/api/chart/*")
+public class ChartRestServlet extends HttpServlet {
+	
+	private static final String BASE_URI = "/api/chart";
+
+	@Override
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		String requestURI = request.getRequestURI();
+		System.out.println("requestURI : " + requestURI);
+		
+		String str = requestURI.substring(BASE_URI.length());
+		str = str.substring(1); // 맨 앞에 슬래시(/) 제거
+		System.out.println("str = " + str);
+		
+		if (str.equals("gender-per-count")) {
+			printGenderPerCount(request, response);
+		}
+		
+	} // doGet
+	
+	
+	private void printGenderPerCount(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// http://localhost:8090/api/chart/gender-per-count
+		
+		MemberDAO memberDAO = MemberDAO.getInstance();
+
+		List<Map<String, Object>> list = memberDAO.getGenderPerCount();
+
+
+		List<String> labelList = new ArrayList<>(); // 레이블을 담을 리스트 준비
+		List<Integer> dataList = new ArrayList<>(); // 데이터를 담을 리스트 준비
+
+		for (Map<String, Object> map : list) {
+			
+			labelList.add((String) map.get("recv_email"));
+			dataList.add((Integer) map.get("cnt"));
+		} // for
+
+		// Gson 객체 준비
+		Gson gson = new Gson();
+		
+		Map<String, Object> map = new HashMap<>(); // { labelList: ['남성','여성'], dataList: [2,1] }
+		map.put("labelList", labelList);
+		map.put("dataList", dataList);
+		
+		String strJson = gson.toJson(map);
+		System.out.println("strJson : " + strJson);
+		
+		response.setContentType("application/json; charset=UTF-8");
+		PrintWriter out = response.getWriter();
+		out.print(strJson);
+		out.flush();
+	} // printGenderPerCount
+}
+  ```
+
+</div>
+</details>
 
 - **Ajax를 이용하여 이메일 수신 비율 차트** :pushpin: [코드 확인](https://github.com/1000MARIN/porscheMania/blob/master/src/main/webapp/chart/pieChartEmailAjax.jsp#L128)
   - URL 유효성 체크와 이미지, 제목 파싱이 끝난 컨텐츠는 DB에 저장합니다.
