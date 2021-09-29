@@ -33,7 +33,7 @@ JSP를 활용하여 사용되는 서버 프로그램 중에서
 
 ### 5.1. DB 연결
 
-- **
+- :pushpin: [코드 확인](https://github.com/1000MARIN/porscheMania/blob/master/src/main/java/com/example/repository/JdbcUtils.java#L12)
 
 ### 5.2. Service
 
