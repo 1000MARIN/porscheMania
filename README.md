@@ -318,29 +318,6 @@ public class MultiPartEmailServlet extends HttpServlet {
 
 </br>
 
-## 7. 그 외 트러블 슈팅
-<details>
-<summary>npm run dev 실행 오류</summary>
-<div markdown="1">
-
-- Webpack-dev-server 버전을 3.0.0으로 다운그레이드로 해결
-- `$ npm install —save-dev webpack-dev-server@3.0.0`
-
-</div>
-</details>
-
-<details>
-<summary>vue-devtools 크롬익스텐션 인식 오류 문제</summary>
-<div markdown="1">
-  
-  - main.js 파일에 `Vue.config.devtools = true` 추가로 해결
-  - [https://github.com/vuejs/vue-devtools/issues/190](https://github.com/vuejs/vue-devtools/issues/190)
-  
-</div>
-</details>
-    
-</br>
-
-## 8. 회고 / 느낀점
+## 7. 회고 / 느낀점
 > 간단한 웹 프로그램을 만들더라도 아직 시간이 많이 걸리고 작은 버그들이 조금씩 있어서 완성도가 제 기준에 못 미치는 것 같습니다. 
 현재 본 프로그램에서 구상하고 있는 기능들은 더 있지만 기존 기능들을 더 익숙하게 만들어 추후 다른 프로그램을 만들 때에는 조금이나마 발전할 수 있도록 계속 배우고 노력 하겠습니다. 
