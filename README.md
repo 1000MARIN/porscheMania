@@ -38,7 +38,7 @@ JSP를 활용하여 사용되는 서버 프로그램 중에서
 ### 5.2. Service
 
 
-- **가입시 아이디 중복 확인** :pushpin: [코드 확인](https://github.com/1000MARIN/porscheMania/blob/master/src/main/webapp/member/joinIdDupChk.jsp#L33)
+- **가입시 아이디 중복 확인** :pushpin: [코드 확인](https://github.com/1000MARIN/porscheMania/blob/master/src/main/webapp/member/joinIdDupChk.jsp#L33) :pushpin: [코드 확인](https://github.com/1000MARIN/porscheMania/blob/master/src/main/java/com/example/repository/MemberDAO.java#L163)
   - 사용자가 URL 입력 시 Http 프로토콜을 생략하거나 공백을 넣은 경우,  
   올바른 URL이 될 수 있도록 Http 프로토콜을 추가해주고, 공백을 제거해줍니다.
 
