@@ -59,12 +59,12 @@ JSP를 활용하여 사용되는 서버 프로그램 중에서
 ### 5.3. 관리자 모드
 
 - **Json를 이용하여 이메일 수신 비율 차트** :pushpin: [코드 확인](https://github.com/1000MARIN/porscheMania/blob/master/src/main/webapp/chart/pieChartEmail.jsp#L25)
-  - URL 유효성 체크와 이미지, 제목 파싱이 끝난 컨텐츠는 DB에 저장합니다.
-  - 저장된 컨텐츠는 다시 Repository - Service - Controller를 거쳐 화면단에 송출됩니다.
+  - 서버에서 제공하는 데이터를 받아 옵니다.
+  - JSON 파일을 읽어서 배열로 저장하여 처리합니다.
+  
 
 - **Ajax를 이용하여 이메일 수신 비율 차트** :pushpin: [코드 확인](https://github.com/1000MARIN/porscheMania/blob/master/src/main/webapp/chart/pieChartEmailAjax.jsp#L128)
-  - URL 유효성 체크와 이미지, 제목 파싱이 끝난 컨텐츠는 DB에 저장합니다.
-  - 저장된 컨텐츠는 다시 Repository - Service - Controller를 거쳐 화면단에 송출됩니다.
+  - 방대한 데이터를 가져오는것에 Ajax로 가져오는것이 안정적이고 속도가 빠릅니다.
 
 <details>
 <summary><b>이메일 수신 비율 차트 서버 코드</b></summary>
@@ -134,8 +134,8 @@ public class ChartRestServlet extends HttpServlet {
 <br>
 	
 - **단체 메일 발송하기** :pushpin: [코드 확인](https://github.com/1000MARIN/porscheMania/blob/master/src/main/java/com/example/email/MultiPartEmailServlet.java#L23)
-  - URL 유효성 체크와 이미지, 제목 파싱이 끝난 컨텐츠는 DB에 저장합니다.
-  - 저장된 컨텐츠는 다시 Repository - Service - Controller를 거쳐 화면단에 송출됩니다.
+  - Jakarta Commons Email API는 이메일 발송을 쉽게 처리하기 위한 클래스를 이용합니다.
+  - 파일을 첨부하기 위해서는 org.apache.commons.mail.EmailAttachment 클래스와 org.apache.commons.mail.MultiPartEmail 이메일을 사용합니다.
 
 <details>
 <summary><b>단체 메일 발송 서버 코드</b></summary>
