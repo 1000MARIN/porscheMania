@@ -409,4 +409,5 @@ public Page<Post> findAllByTagName(String tagName, Pageable pageable) {
 </br>
 
 ## 8. 회고 / 느낀점
->프로젝트 개발 회고 글: https://zuminternet.github.io/ZUM-Pilot-integer/
+> 간단한 웹 프로그램을 만들더라도 아직 시간이 많이 걸리고 작은 버그들이 조금씩 있어서 완성도가 제 기준에 못 미치는 것 같습니다. 
+현재 본 프로그램에서 구상하고 있는 기능들은 더 있지만 기존 기능들을 더 익숙하게 만들어 추후 다른 프로그램을 만들 때에는 조금이나마 발전할 수 있도록 계속 배우고 노력 하겠습니다. 
