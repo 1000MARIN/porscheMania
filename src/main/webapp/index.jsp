@@ -93,7 +93,7 @@ PageDTO pageDTO = new PageDTO(cri, totalCount);
 						<br>
 						<br>
 							<h4>
-								<a href="/board/boardNotice.jsp"
+								<a href=""
 									class="text-decoration-none text-dark">나의 포르쉐</a>
 							</h4>
 							<hr>
@@ -124,7 +124,7 @@ PageDTO pageDTO = new PageDTO(cri, totalCount);
 								<br>
 								<br>
 									<h4>
-										<a href="/board/boardList.jsp"
+										<a href="/pmania/board/boardList.jsp"
 											class="text-decoration-none text-dark">포르쉐 정보공유</a>
 									</h4>
 									<hr>
@@ -152,7 +152,7 @@ PageDTO pageDTO = new PageDTO(cri, totalCount);
 							                	for (BoardVO boardVO : boardList) {
 							                		String strRegDate = sdf.format(boardVO.getRegDate());
 							                		%>
-										    <tr class="table-light" onclick="location.href='/board/boardContent.jsp?num=<%=boardVO.getNum() %>&pageNum=<%=pageDTO.getCri().getPageNum() %>'">
+										    <tr class="table-light" onclick="location.href='/pmania/board/boardContent.jsp?num=<%=boardVO.getNum() %>&pageNum=<%=pageDTO.getCri().getPageNum() %>'">
 										      <th scope="col" class="col-md-1 text-center"><%=boardVO.getNum() %></th>
 										      <td class="text-left">
 										      <%
