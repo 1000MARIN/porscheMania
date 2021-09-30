@@ -42,7 +42,7 @@
               <hr>
               <br>
               
-              <form action="/board/boardWritePro.jsp" method="POST" enctype="multipart/form-data">
+              <form action="/pmania/board/boardWritePro.jsp" method="POST" enctype="multipart/form-data">
               	<input type="hidden" name="pageNum" value="<%=pageNum %>">
               	<input type="hidden" id="id" type="text" name="id" value="<%=id %>">
                 
@@ -89,7 +89,7 @@
                   	<i class="fas fa-eraser me-sm-2"></i>초기화
                   </button>
                   &nbsp;&nbsp;
-                  <button class="btn btn-sm btn-outline-dark" type="button" onclick="location.href = '/board/boardList.jsp'">
+                  <button class="btn btn-sm btn-outline-dark" type="button" onclick="location.href = '/pmania/board/boardList.jsp'">
                   	<i class="fas fa-clipboard-list me-sm-2"></i>글목록
                   </button>
                 </div>
