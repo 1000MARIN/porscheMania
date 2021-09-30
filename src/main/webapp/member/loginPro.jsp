@@ -62,7 +62,7 @@ if (memberVO != null) { // id 일치
 	%>
 	<script>
 		alert('아이디 없습니다.');
-		//location.href = '/pmania/mamber/login.jsp'; // 로그인폼 페이지로 새로 요청하기
+		//location.href = '/pmania/member/login.jsp'; // 로그인폼 페이지로 새로 요청하기
 		history.back(); // 뒤로가기
 	</script>
 	<%
