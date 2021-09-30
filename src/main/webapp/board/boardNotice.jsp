@@ -78,7 +78,7 @@
 			  if (session.getAttribute("id") != null) {
 %>
               <div class="">
-              	<a href="/board/boardWrite.jsp"><button type="button" class="btn btn-dark">
+              	<a href="/pmania/board/boardWrite.jsp"><button type="button" class="btn btn-dark">
               	<i class="far fa-edit me-sm-1"></i>새글쓰기
               	</button></a>
               </div>
