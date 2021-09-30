@@ -37,7 +37,7 @@ if (memberVO.getPasswd().equals(dbMemberVO.getPasswd()) == true) {
 	%>
 	<script>
 		alert('회원정보 수정성공');
-		location.href = '/index.jsp';
+		location.href = '/pmania/index.jsp';
 	</script>	
 	<%
 } else {
