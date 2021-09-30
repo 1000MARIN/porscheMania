@@ -39,7 +39,7 @@ System.out.println(memberVO); // 서버 콘솔 출력
 
 <script>
 	alert('회원가입 성공');
-	location.href = '/member/login.jsp'; // 로그인 화면 요청
+	location.href = '/pmania/member/login.jsp'; // 로그인 화면 요청
 </script>
 
 
