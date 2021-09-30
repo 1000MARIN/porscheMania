@@ -37,7 +37,7 @@ body {
 
 
 
-							<form action="/email/multipart-mail" method="post"
+							<form action="/pmania/email/multipart-mail" method="post"
 								enctype="multipart/form-data">
 
 								<div class="row">
