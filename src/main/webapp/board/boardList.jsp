@@ -130,7 +130,7 @@ PageDTO pageDTO = new PageDTO(cri, totalCount);
 			  if (session.getAttribute("id") != null) {
 				  %>
               <div class="">
-              	<a href="/board/boardWrite.jsp?pageNum=<%=pageDTO.getCri().getPageNum() %>">
+              	<a href="/pmania/board/boardWrite.jsp?pageNum=<%=pageDTO.getCri().getPageNum() %>">
               	<button type="button" class="btn btn-sm btn-outline-warning">
               	<i class="far fa-edit me-sm-1"></i>새글쓰기
               	</button></a>
@@ -162,7 +162,7 @@ PageDTO pageDTO = new PageDTO(cri, totalCount);
 	                	for (BoardVO boardVO : boardList) {
 	                		String strRegDate = sdf.format(boardVO.getRegDate());
 	                		%>
-				    <tr class="table-light" onclick="location.href='/board/boardContent.jsp?num=<%=boardVO.getNum() %>&pageNum=<%=pageDTO.getCri().getPageNum() %>'">
+				    <tr class="table-light" onclick="location.href='/pmania/board/boardContent.jsp?num=<%=boardVO.getNum() %>&pageNum=<%=pageDTO.getCri().getPageNum() %>'">
 				      <th scope="col" class="col-md-1 text-center"><%=boardVO.getNum() %></th>
 				      <td class="text-left">
 				      <%
@@ -206,7 +206,7 @@ PageDTO pageDTO = new PageDTO(cri, totalCount);
               if (pageDTO.isPrev()) {
             	  %>
                   <li class="page-item">
-                  	<a class="page-link" href="/board/boardList.jsp?pageNum=<%=pageDTO.getStartPage() - 1 %>&type=<%=pageDTO.getCri().getType() %>&keyword=<%=pageDTO.getCri().getKeyword() %>#board" data-abc="true"><i class="fa fa-angle-left"></i></a>
+                  	<a class="page-link" href="/pmania/board/boardList.jsp?pageNum=<%=pageDTO.getStartPage() - 1 %>&type=<%=pageDTO.getCri().getType() %>&keyword=<%=pageDTO.getCri().getKeyword() %>#board" data-abc="true"><i class="fa fa-angle-left"></i></a>
                   </li>
                   <%
               }
@@ -217,7 +217,7 @@ PageDTO pageDTO = new PageDTO(cri, totalCount);
               for (int i=pageDTO.getStartPage(); i<=pageDTO.getEndPage(); i++) {
             	  %>
                   <li class="page-item <%=(pageDTO.getCri().getPageNum() == i) ? "active" : "" %>">
-                  	<a class="page-link" href="/board/boardList.jsp?pageNum=<%=i %>&type=<%=pageDTO.getCri().getType() %>&keyword=<%=pageDTO.getCri().getKeyword() %>#board" data-abc="true"><%=i %></a>
+                  	<a class="page-link" href="/pmania/board/boardList.jsp?pageNum=<%=i %>&type=<%=pageDTO.getCri().getType() %>&keyword=<%=pageDTO.getCri().getKeyword() %>#board" data-abc="true"><%=i %></a>
                   </li>
                    <%
               }
@@ -231,7 +231,7 @@ PageDTO pageDTO = new PageDTO(cri, totalCount);
                   
                   
                   <li class="page-item">
-                  	<a class="page-link" href="/board/boardList.jsp?pageNum=<%=pageDTO.getEndPage() + 1 %>&type=<%=pageDTO.getCri().getType() %>&keyword=<%=pageDTO.getCri().getKeyword() %>#board" data-abc="true"><i class="fa fa-angle-right"></i></a>
+                  	<a class="page-link" href="/pmania/board/boardList.jsp?pageNum=<%=pageDTO.getEndPage() + 1 %>&type=<%=pageDTO.getCri().getType() %>&keyword=<%=pageDTO.getCri().getKeyword() %>#board" data-abc="true"><i class="fa fa-angle-right"></i></a>
                   </li>
                   <%
               }
@@ -295,7 +295,7 @@ PageDTO pageDTO = new PageDTO(cri, totalCount);
   		var query = $('#frm').serialize();
   		console.log(query);
   		
-  		location.href = '/board/boardList.jsp?' + query + '#board';
+  		location.href = '/pmania/board/boardList.jsp?' + query + '#board';
   	});
   </script>
 
