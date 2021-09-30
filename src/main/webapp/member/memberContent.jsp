@@ -64,7 +64,7 @@ body {
 							<h4>회원정보 수정</h4>
 							<hr>
 							<br>
-							<form action="/pmania/mamber/modifyMemberPro.jsp" method="POST" id="frm"
+							<form action="/pmania/member/modifyMemberPro.jsp" method="POST" id="frm"
 								name="frm">
 								<div class="d-flex flex-column">
 
@@ -154,7 +154,7 @@ body {
 									</button>
 									
 									&nbsp;&nbsp;
-					                  <button class="btn btn-sm btn-outline-dark" type="button" onclick="location.href = '/pmania/mamber/memberList.jsp'">
+					                  <button class="btn btn-sm btn-outline-dark" type="button" onclick="location.href = '/pmania/member/memberList.jsp'">
 					                  	<i class="fas fa-clipboard-list me-sm-2"></i>회원현황
 					                  </button>
 								</div>
