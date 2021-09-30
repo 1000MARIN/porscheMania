@@ -9,12 +9,12 @@
 <%
 // ===== display.jsp 페이지는 이미지 파일 요청에서 실행됨. =====
 
-// http://localhost:8090/board/display.jsp?fileName=2021/08/03/s_apple.jpg
+// http://localhost:8090/pmania/board/display.jsp?fileName=2021/08/03/s_apple.jpg
 
 // 파일경로가 포함된 파일명을 파라미터로 가져오기
 String fileName = request.getParameter("fileName"); // "2021/08/03/s_apple.jpg"
 
-File file = new File("C:/LCJ/upload", fileName); // "C:/ksw/upload/2021/08/03/s_apple.jpg"
+File file = new File("C:/LCJ/upload", fileName); // "C:/LCJ/upload/2021/08/03/s_apple.jpg"
 
 if (file.exists() == false) { // 파일이 없으면 종료
 	return;
