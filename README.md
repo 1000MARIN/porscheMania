@@ -294,7 +294,14 @@ public class MultiPartEmailServlet extends HttpServlet {
 </br>
 
 ## 6. 핵심 트러블 슈팅
-### 6.1. 회원 가입시 주소 입력 값 받아오기
+### 6.1. AWS 배포 후 게시판 글쓰기가 안되는 문제
+- 집에서 localhost 서버에 올렸을 때에는 프로그램에 문제가 없었지만, AWS서버에 배포 후 게시판 글쓰기가 되지 않았습니다.
+
+- 글쓰기에서 첨부파일 기능이 있었는데 uplode 위치가 C:/ 로 되어 있는게 원인이 있습니다.
+
+- :pushpin: [코드 확인](https://github.com/1000MARIN/porscheMania/blob/master/src/main/webapp/board/boardWritePro.jsp#L53)
+	
+### 6.2. 회원 가입시 주소 입력 값 받아오기
 - 우리가 사용하는 웹 사이트처럼 회원 가입시에 주소 입력을 받을 수 있는 외부 API를 이용하여 주소 값을 받아 오게 하는 것을 구현 하였습니다.
 
 - 하지만 데이터에는 'null' 값으로만 받아 와서 무엇이 문제인지 코드를 계속보다가 input태그의 name속성을 입력을 비워둔게 원인이었습니다. 
