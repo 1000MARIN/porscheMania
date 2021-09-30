@@ -162,14 +162,14 @@ boardVO.setReSeq(0);  // 주글은 글그룹 안에서 순번이 0 (re_ref 오�
 boardDAO.addBoard(boardVO);
 
 // 글목록 화면으로 이동
-//response.sendRedirect("/board/boardList.jsp");
+//response.sendRedirect("/pmania/board/boardList.jsp");
 
 
 // 요청 페이지번호 파라미터 가져오기
 String pageNum = multi.getParameter("pageNum"); 
 
 // 글상세보기 화면으로 이동
-response.sendRedirect("/board/boardContent.jsp?num=" + boardVO.getNum() + "&pageNum=" + pageNum);
+response.sendRedirect("/pmania/board/boardContent.jsp?num=" + boardVO.getNum() + "&pageNum=" + pageNum);
 %>
 
 
