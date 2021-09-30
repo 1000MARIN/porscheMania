@@ -159,7 +159,7 @@ PageDTO2 pageDTO = new PageDTO2(cri, totalCount);
 	                	for (MemberVO memberVO : memberList) {
 	                		String strRegDate = sdf.format(memberVO.getRegDate());
 	                		%>
-				    <tr class="table-light" onclick="location.href='/member/memberContent.jsp?id=<%=memberVO.getId() %>&pageNum=<%=pageDTO.getCri2().getPageNum() %>'">
+				    <tr class="table-light" onclick="location.href='/pmania/mamber/memberContent.jsp?id=<%=memberVO.getId() %>&pageNum=<%=pageDTO.getCri2().getPageNum() %>'">
 				      
 				      
 				      <td scope="row" class="col-md-1 text-center"><%=memberVO.getId() %></td>
@@ -198,7 +198,7 @@ PageDTO2 pageDTO = new PageDTO2(cri, totalCount);
               if (pageDTO.isPrev()) {
             	  %>
                   <li class="page-item">
-                  	<a class="page-link" href="/member/memberList.jsp?pageNum=<%=pageDTO.getStartPage() - 1 %>&type=<%=pageDTO.getCri2().getType() %>&keyword=<%=pageDTO.getCri2().getKeyword() %>#board" data-abc="true"><i class="fa fa-angle-left"></i></a>
+                  	<a class="page-link" href="/pmania/mamber/memberList.jsp?pageNum=<%=pageDTO.getStartPage() - 1 %>&type=<%=pageDTO.getCri2().getType() %>&keyword=<%=pageDTO.getCri2().getKeyword() %>#board" data-abc="true"><i class="fa fa-angle-left"></i></a>
                   </li>
                   <%
               }
@@ -209,7 +209,7 @@ PageDTO2 pageDTO = new PageDTO2(cri, totalCount);
               for (int i=pageDTO.getStartPage(); i<=pageDTO.getEndPage(); i++) {
             	  %>
                   <li class="page-item <%=(pageDTO.getCri2().getPageNum() == i) ? "active" : "" %>">
-                  	<a class="page-link" href="/member/memberList.jsp?pageNum=<%=i %>&type=<%=pageDTO.getCri2().getType() %>&keyword=<%=pageDTO.getCri2().getKeyword() %>#board" data-abc="true"><%=i %></a>
+                  	<a class="page-link" href="/pmania/mamber/memberList.jsp?pageNum=<%=i %>&type=<%=pageDTO.getCri2().getType() %>&keyword=<%=pageDTO.getCri2().getKeyword() %>#board" data-abc="true"><%=i %></a>
                   </li>
                    <%
               }
@@ -223,7 +223,7 @@ PageDTO2 pageDTO = new PageDTO2(cri, totalCount);
                   
                   
                   <li class="page-item">
-                  	<a class="page-link" href="/member/memberList.jsp?pageNum=<%=pageDTO.getEndPage() + 1 %>&type=<%=pageDTO.getCri2().getType() %>&keyword=<%=pageDTO.getCri2().getKeyword() %>#board" data-abc="true"><i class="fa fa-angle-right"></i></a>
+                  	<a class="page-link" href="/pmania/mamber/memberList.jsp?pageNum=<%=pageDTO.getEndPage() + 1 %>&type=<%=pageDTO.getCri2().getType() %>&keyword=<%=pageDTO.getCri2().getKeyword() %>#board" data-abc="true"><i class="fa fa-angle-right"></i></a>
                   </li>
                   <%
               }
@@ -287,7 +287,7 @@ PageDTO2 pageDTO = new PageDTO2(cri, totalCount);
   		var query = $('#frm').serialize();
   		console.log(query);
   		
-  		location.href = '/member/memberList.jsp?' + query + '#board';
+  		location.href = '/pmania/mamber/memberList.jsp?' + query + '#board';
   	});
   </script>
 
