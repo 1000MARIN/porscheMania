@@ -51,7 +51,7 @@ String strBirthday = sdf2.format(date);
 	          <br>
 	        </div>
 	        
-	        <form action="/pmania/member/modifyMemberPro.jsp" method="POST" id="frm" name="frm">
+	        <form action="/member/modifyMemberPro.jsp" method="POST" id="frm" name="frm">
    		        <div class="d-flex flex-column">
 	        	
 	            <div class="form-group mb-1">
