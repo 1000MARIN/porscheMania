@@ -102,8 +102,8 @@ List<AttachVO> attachList = attachDAO.getAttachesByBno(num);
                    				// 원본 이미지 경로
                    				String fileCallPathOrigin = attach.getUploadpath() + "/" + attach.getFilename();
                    				%>
-                       			<a href="/board/display.jsp?fileName=<%=fileCallPathOrigin %>">
-                       				<img src="/board/display.jsp?fileName=<%=fileCallPathOrigin %>" width="80%">
+                       			<a href="/PorscheMania/PorscheMania/board/display.jsp?fileName=<%=fileCallPathOrigin %>">
+                       				<img src="/PorscheMania/board/display.jsp?fileName=<%=fileCallPathOrigin %>" width="80%">
                     			</a>
                        			<%
 	                   			} // end of if
@@ -130,7 +130,7 @@ List<AttachVO> attachList = attachDAO.getAttachesByBno(num);
                    				String fileCallPath = attach.getUploadpath() + "/" + attach.getFilename();
                    				%>
                        			<p>
-                       				<a href="/board/download.jsp?fileName=<%=fileCallPath %>" class="text-decoration-none">
+                       				<a href="/PorscheMania/board/download.jsp?fileName=<%=fileCallPath %>" class="text-decoration-none">
 	                       				<i class="fas fa-download"></i>
                        				&nbsp;
 	                       				<%=attach.getFilename() %>
@@ -144,8 +144,8 @@ List<AttachVO> attachList = attachDAO.getAttachesByBno(num);
                    				String fileCallPathOrigin = attach.getUploadpath() + "/" + attach.getFilename();
                    				%>
                        			<p class="mb-2">
-                       				<a href="/board/display.jsp?fileName=<%=fileCallPathOrigin %>">
-                       					<img src="/board/display.jsp?fileName=<%=fileCallPath %>">
+                       				<a href="/PorscheMania/board/display.jsp?fileName=<%=fileCallPathOrigin %>">
+                       					<img src="/PorscheMania/board/display.jsp?fileName=<%=fileCallPath %>">
                        				</a>
                        			<p>
                        			<%
@@ -170,7 +170,7 @@ List<AttachVO> attachList = attachDAO.getAttachesByBno(num);
                   if (id != null) { // 로그인 했을때
                 	  if (id.equals(boardVO.getMid())) { // 로그인 아이디와 글작성자 아이디가 같을때
                 		  %>
-                		<a href="/board/boardModify.jsp?num=<%=boardVO.getNum() %>&pageNum=<%=pageNum %>">
+                		<a href="/PorscheMania/board/boardModify.jsp?num=<%=boardVO.getNum() %>&pageNum=<%=pageNum %>">
 	                		<button class="btn btn-sm btn-outline-primary" type="button" >
 		                      <i class="fas fa-pencil-alt me-sm-2"></i>글수정
 		                    </button>
@@ -187,7 +187,7 @@ List<AttachVO> attachList = attachDAO.getAttachesByBno(num);
                 	 %>
                 	 
                 	 &nbsp;&nbsp;
-                	 <a href="/board/replyWrite.jsp?reRef=<%=boardVO.getReRef() %>&reLev=<%=boardVO.getReLev() %>&reSeq=<%=boardVO.getReSeq() %>&pageNum=<%=pageNum %>">
+                	 <a href="/PorscheMania/board/replyWrite.jsp?reRef=<%=boardVO.getReRef() %>&reLev=<%=boardVO.getReLev() %>&reSeq=<%=boardVO.getReSeq() %>&pageNum=<%=pageNum %>">
 	                   <button class="btn btn-sm btn-outline-warning" type="button" >
 	                     <i class="far fa-edit me-sm-2"></i>답글쓰기
 	                   </button>
@@ -196,7 +196,7 @@ List<AttachVO> attachList = attachDAO.getAttachesByBno(num);
                   }
                   %>
                   &nbsp;&nbsp;
-                  <a href="/board/boardList.jsp?pageNum=<%=pageNum %>">
+                  <a href="/PorscheMania/board/boardList.jsp?pageNum=<%=pageNum %>">
                     <button class="btn btn-sm btn-outline-dark" type="button" >
                       <i class="fas fa-clipboard-list me-sm-2"></i>글목록
                     </button>
@@ -232,7 +232,7 @@ List<AttachVO> attachList = attachDAO.getAttachesByBno(num);
     	
   		var isRemove = confirm('이 글을 삭제하시겠습니까?');
   		if (isRemove == true) {
-  			location.href = '/board/boardRemove.jsp?num=<%=boardVO.getNum() %>&pageNum=<%=pageNum %>';
+  			location.href = '/PorscheMania/board/boardRemove.jsp?num=<%=boardVO.getNum() %>&pageNum=<%=pageNum %>';
   		}
   	}
   </script>
