@@ -42,7 +42,7 @@
               <hr>
               <br>
               
-              <form action="/pmania/member/removeMemberPro.jsp" method="POST" id="frm">
+              <form action="/member/removeMemberPro.jsp" method="POST" id="frm">
                  
                  <div class="">
                   <div class="form-group col s12">
