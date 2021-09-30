@@ -25,7 +25,7 @@
 	          <br>
 	        </div>
 	        
-	        <form action="/member/joinPro.jsp" method="POST" id="frm" name="frm">
+	        <form action="/pmania/member/joinPro.jsp" method="POST" id="frm" name="frm">
    		        <div class="d-flex flex-column">
 	        	
 	            <div class="input-field form-group mb-1">
@@ -95,7 +95,7 @@
                   </button>
                 </div>
                 <div class="modal-footer d-flex justify-content-center">
-	        <div class="signup-section">이미 회원이신가요? <a href="/member/login.jsp" class="text-info">로그인</a>.</div>
+	        <div class="signup-section">이미 회원이신가요? <a href="/pmania/member/login.jsp" class="text-info">로그인</a>.</div>
 	      </div>
             </form>
 	        
@@ -117,7 +117,7 @@
 				</div>
 				<div class="p-2">
 					
-					<a href="/member/login.jsp" class="text-decoration-none text-light"><i class="far fa-user fa-lg text-warning"></i>
+					<a href="/pmania/member/login.jsp" class="text-decoration-none text-light"><i class="far fa-user fa-lg text-warning"></i>
 					&nbsp;로그인</a>
 				</div>
 
@@ -142,7 +142,7 @@
 				<h4>&nbsp;Support</h4>
 				<br>
 				<div class="p-2">
-					<a href="/member/join.jsp" class="text-decoration-none text-light"><i class="fas fa-user-plus fa-lg text-warning"></i>
+					<a href="/pmania/member/join.jsp" class="text-decoration-none text-light"><i class="fas fa-user-plus fa-lg text-warning"></i>
 					&nbsp;회원가입</a>
 				</div>
 				<div class="p-2">
@@ -275,7 +275,7 @@
 			}
 			
 			// id 중복확인 자식창 열기  window.open();
-			open('/member/joinIdDupChk.jsp?id=' + id, 'idDupChk', 'width=500,height=400, left='+ popupX + ', top='+ popupY);
+			open('/pmania/member/joinIdDupChk.jsp?id=' + id, 'idDupChk', 'width=500,height=400, left='+ popupX + ', top='+ popupY);
 		});
 	  	
 	 	// 시작시 아이디 폼에 바로 커서가기 
