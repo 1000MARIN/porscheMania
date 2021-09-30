@@ -44,7 +44,7 @@ int count = memberDAO.getCountById(id); // count 1: 아이디 중복, 0: 아이�
 	}
 	%>
 	
-	<form action="/member/joinIdDupChk.jsp" method="get" name="frm">
+	<form action="/pmania/member/joinIdDupChk.jsp" method="get" name="frm">
 		<input type="text" class="form-control form-control-sm mb-1" name="id" value="<%=id %>">
 		<button class="btn btn-outline-warning btn-sm" type="submit">ID 중복확인</button>
 	</form>
