@@ -51,7 +51,7 @@ String strBirthday = sdf2.format(date);
 	          <br>
 	        </div>
 	        
-	        <form action="/member/modifyMemberPro.jsp" method="POST" id="frm" name="frm">
+	        <form action="/pmania/member/modifyMemberPro.jsp" method="POST" id="frm" name="frm">
    		        <div class="d-flex flex-column">
 	        	
 	            <div class="form-group mb-1">
@@ -131,11 +131,11 @@ String strBirthday = sdf2.format(date);
 					<h4>&nbsp;Get started</h4>
 					<br>
 					<div class="p-2">
-						<a href="/index.jsp" class="text-decoration-none text-light"><i class="fas fa-home fa-lg text-warning"></i>&nbsp;Home</a>
+						<a href="/pmania/index.jsp" class="text-decoration-none text-light"><i class="fas fa-home fa-lg text-warning"></i>&nbsp;Home</a>
 					</div>
 					<div class="p-2">
 						
-						<a href="/member/login.jsp" class="text-decoration-none text-light"><i class="far fa-user fa-lg text-warning"></i>
+						<a href="/pmania/member/login.jsp" class="text-decoration-none text-light"><i class="far fa-user fa-lg text-warning"></i>
 						&nbsp;로그인</a>
 					</div>
 	
@@ -144,15 +144,15 @@ String strBirthday = sdf2.format(date);
 					<h4>&nbsp;Menu</h4>
 					<br>
 					<div class="p-2">
-						<a href="/board/boardImage.jsp" class="text-decoration-none text-light"><i class="fas fa-clipboard-list fa-lg text-warning"></i>
+						<a href="" class="text-decoration-none text-light"><i class="fas fa-clipboard-list fa-lg text-warning"></i>
 						&nbsp;나의 포르쉐</a>
 					</div>
 					<div class="p-2">
-						<a href="/board/boardList.jsp" class="text-decoration-none text-light"><i class="fas fa-clipboard-list fa-lg text-warning"></i>
+						<a href="/pmania/board/boardList.jsp" class="text-decoration-none text-light"><i class="fas fa-clipboard-list fa-lg text-warning"></i>
 						&nbsp;포르쉐 정보공유</a>
 					</div>
 					<div class="p-2">
-						<a href="/websocket/simpleChat.jsp" class="text-decoration-none text-light"><i class="far fa-comments fa-lg text-warning"></i>
+						<a href="/pmania/websocket/simpleChat.jsp" class="text-decoration-none text-light"><i class="far fa-comments fa-lg text-warning"></i>
 						&nbsp;채팅 서비스</a>
 					</div>
 				</div>
@@ -160,11 +160,11 @@ String strBirthday = sdf2.format(date);
 					<h4>&nbsp;Support</h4>
 					<br>
 					<div class="p-2">
-						<a href="/member/join.jsp" class="text-decoration-none text-light"><i class="fas fa-user-plus fa-lg text-warning"></i>
+						<a href="/pmania/member/join.jsp" class="text-decoration-none text-light"><i class="fas fa-user-plus fa-lg text-warning"></i>
 						&nbsp;회원가입</a>
 					</div>
 					<div class="p-2">
-						<a href="/board/boardNotice.jsp" class="text-decoration-none text-light"><i class="fas fa-bullhorn fa-lg text-warning"></i>
+						<a href="" class="text-decoration-none text-light"><i class="fas fa-bullhorn fa-lg text-warning"></i>
 						&nbsp;공지사항</a>
 					</div>
 				</div>
