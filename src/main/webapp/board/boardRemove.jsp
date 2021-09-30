@@ -47,7 +47,7 @@ attachDAO.deleteAttachesByBno(num);
 boardDAO.deleteBoardByNum(num);
 
 // 글목록 boardList.jsp로 이동
-response.sendRedirect("/board/boardList.jsp?pageNum=" + pageNum);
+response.sendRedirect("/pmania/board/boardList.jsp?pageNum=" + pageNum);
 %>
 
 
