@@ -42,7 +42,7 @@ if (passwd.equals(memberVO.getPasswd()) == true) {
 	%>
 	<script>
 		alert('회원탈퇴 하였습니다.');
-		location.href = '/index.jsp';
+		location.href = '/pmania/index.jsp';
 	</script>
 	<%
 } else {
