@@ -295,7 +295,7 @@ public class MultiPartEmailServlet extends HttpServlet {
 
 ## 6. 핵심 트러블 슈팅
 ### 6.1. AWS 배포 후 게시판 글쓰기가 안되는 문제
-- 집에서 localhost 서버에 올렸을 때에는 프로그램에 문제가 없었지만, AWS서버에 배포 후 게시판 글쓰기가 되지 않았습니다.
+- localhost 서버에 올렸을 때에는 프로그램에 문제가 없었지만, AWS서버에 배포 후 게시판 글쓰기가 되지 않았습니다.
 
 - 글쓰기에서 첨부파일 기능이 있었는데 uplode 위치가 C:/ 로 되어 있는게 원인이 있습니다.
 
