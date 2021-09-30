@@ -24,7 +24,7 @@
 	          <h4>로그인</h4>
 	          <br>
 	        </div>
-          <form action="/member/loginPro.jsp" method="POST">
+          <form action="/pmania/member/loginPro.jsp" method="POST">
 	        <div class="d-flex flex-column text-center">
 	            <div class="form-group mb-2" autofocus>
 	              <input type=text class="form-control" id="id" name="id" placeholder="아이디"  autofocus="" />
@@ -63,7 +63,7 @@
         </form>
 	    </div>
 	      <div class="modal-footer d-flex justify-content-center">
-	        <div class="signup-section">아직 회원이 아닌가요? <a href="/member/join.jsp" class="text-info">회원가입</a>.</div>
+	        <div class="signup-section">아직 회원이 아닌가요? <a href="/pmania/member/join.jsp" class="text-info">회원가입</a>.</div>
 	      </div>
 	      
 	  </div>
@@ -81,7 +81,7 @@
 				</div>
 				<div class="p-2">
 					
-					<a href="/member/login.jsp" class="text-decoration-none text-light"><i class="far fa-user fa-lg text-warning"></i>
+					<a href="/pmania/member/login.jsp" class="text-decoration-none text-light"><i class="far fa-user fa-lg text-warning"></i>
 					&nbsp;로그인</a>
 				</div>
 
@@ -106,7 +106,7 @@
 				<h4>&nbsp;Support</h4>
 				<br>
 				<div class="p-2">
-					<a href="/member/join.jsp" class="text-decoration-none text-light"><i class="fas fa-user-plus fa-lg text-warning"></i>
+					<a href="/pmania/member/join.jsp" class="text-decoration-none text-light"><i class="fas fa-user-plus fa-lg text-warning"></i>
 					&nbsp;회원가입</a>
 				</div>
 				<div class="p-2">
