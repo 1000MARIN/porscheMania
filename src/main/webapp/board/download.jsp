@@ -8,7 +8,7 @@
 <%
 //===== download.jsp 페이지는 이미지를 제외한 다른 일반 파일 요청에서 실행됨. =====
 
-// http://localhost:8090/board/download.jsp?fileName=2021/08/03/수업세부일정표.xlsx
+// http://localhost:8090/pmania/board/download.jsp?fileName=2021/08/03/수업세부일정표.xlsx
 
 // 파일경로가 포함된 파일명을 파라미터로 가져오기
 String fileName = request.getParameter("fileName"); // "2021/08/03/수업세부일정표.xlsx"
