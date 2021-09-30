@@ -20,7 +20,7 @@ if (cookies != null) {
 	}
 }
 
-response.sendRedirect("/index.jsp"); // 로그인 화면으로 이동
+response.sendRedirect("/pmania/index.jsp"); // 로그인 화면으로 이동
 %>
 <%--
 <script>
