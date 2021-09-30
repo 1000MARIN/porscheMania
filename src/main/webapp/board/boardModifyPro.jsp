@@ -192,14 +192,14 @@ String pageNum = multi.getParameter("pageNum");
 
 
 // 글목록 화면으로 이동
-//response.sendRedirect("/board/boardList.jsp?pageNum=" + pageNum);
+//response.sendRedirect("/pmania/board/boardList.jsp?pageNum=" + pageNum);
 
 // 상세보기 화면으로 이동
-//response.sendRedirect("/board/boardContent.jsp?num=" + num + "&pageNum=" + pageNum);
+//response.sendRedirect("/pmania/board/boardContent.jsp?num=" + num + "&pageNum=" + pageNum);
 %>
 <script>
 	alert('글 수정 성공');
-	location.href = '/board/boardContent.jsp?num=<%=num %>&pageNum=<%=pageNum %>';
+	location.href = '/pmania/board/boardContent.jsp?num=<%=num %>&pageNum=<%=pageNum %>';
 </script>
 
 
