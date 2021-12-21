@@ -308,7 +308,7 @@ public class MultiPartEmailServlet extends HttpServlet {
 
 
 <details>
-<summary><b>:pushpin: 코드</b></summary>
+<summary><b>:pushpin: 코드 </b></summary>
 <div markdown="1">
 
 ~~~java
