@@ -36,7 +36,7 @@ JSP를 활용하여 사용되는 서버 프로그램 중에서
 게시판 웹 서버 프로그램을 주제로 하여 만들어 보았습니다. 
 
 <details>
-<summary><b>핵심 기능 설명 펼치기</b></summary>
+<summary><b>:pushpin: 핵심 기능 설명 펼치기</b></summary>
 <div markdown="1">
 
 ### 5.1. DB 연결
