@@ -36,7 +36,7 @@ JSP를 활용하여 사용되는 서버 프로그램 중에서
 게시판 웹 서버 프로그램을 주제로 하여 만들어 보았습니다. 
 
 <details>
-<summary><b>핵심 기능 설명 펼치기</b></summary>
+<summary><b>:pushpin: 핵심 기능 설명 펼치기</b></summary>
 <div markdown="1">
 
 ### 5.1. DB 연결
@@ -72,7 +72,7 @@ JSP를 활용하여 사용되는 서버 프로그램 중에서
   - 방대한 데이터를 가져오는것에 Ajax로 가져오는것이 안정적이고 속도가 빠릅니다.
 
 <details>
-<summary><b>이메일 수신 비율 차트 서버 코드</b></summary>
+<summary><b>:pushpin: 이메일 수신 비율 차트 서버 코드</b></summary>
 <div markdown="1">
 
   ```java
@@ -143,7 +143,7 @@ public class ChartRestServlet extends HttpServlet {
   - 파일을 첨부하기 위해서는 org.apache.commons.mail.EmailAttachment 클래스와 org.apache.commons.mail.MultiPartEmail 이메일을 사용합니다.
 
 <details>
-<summary><b>단체 메일 발송 서버 코드</b></summary>
+<summary><b>:pushpin: 단체 메일 발송 서버 코드</b></summary>
 <div markdown="1">
 
   ```java
@@ -308,7 +308,7 @@ public class MultiPartEmailServlet extends HttpServlet {
 
 
 <details>
-<summary><b>코드</b></summary>
+<summary><b>:pushpin: 코드 확인</b></summary>
 <div markdown="1">
 
 ~~~java
